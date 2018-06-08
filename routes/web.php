@@ -14,6 +14,7 @@ Route::post('/api/record/{id}', 'ApiController@addRecord')->name('api.record.cre
 
 //Resource pages
 Route::get('/app/{id}', 'AppController@show')->name('app.show');
+Route::get('/app/{id}/reset', 'AppController@reset')->name('app.reset');
 Route::post('/app', 'AppController@store')->name('app.store');
 Route::delete('/app/{id}', 'AppController@destroy')->name('app.destroy');
 

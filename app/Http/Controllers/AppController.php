@@ -29,6 +29,19 @@ class AppController extends Controller
         return view('pages.show_app')->with($data);
     }
 
+    public function reset($id) {
+        $app = App::find($id);
+
+        if ($app == null)
+            return redirect('/profile')->withErrors(['The specified app does not exist!']);
+
+        if ($app->user_id != Auth::id())
+            return redirect('/profile')->withErrors(['You do not have permission to reset the specified app!']);
+
+        $app->records()->delete();
+        return redirect('/app/' . $app->id)->with('success', 'You have successfully reset the app!');
+    }
+
     public function store(Request $request) {
         $this->validate($request, [
             'name' => 'required'

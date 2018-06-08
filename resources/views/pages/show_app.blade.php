@@ -32,6 +32,7 @@
                 @endforeach
             </tbody>
         </table>
+        <a href="/app/{{$app->id}}/reset" class="btn btn-danger">Reset Records</a>
         {{ $records->links() }}
     @endif
 @endsection
