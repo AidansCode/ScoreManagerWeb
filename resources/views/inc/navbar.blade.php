@@ -11,6 +11,7 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="/docs">Docs</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('pages.download') }}">Download</a></li>
             </ul>
