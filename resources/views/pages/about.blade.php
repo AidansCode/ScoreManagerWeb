@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h1 class="display-3 bold text-center">About ScoreManager</h1>
+    <h1 class="bold text-center" style="font-size: 6vw;">About ScoreManager</h1>
     <hr class="my-0">
     <h1 class="mt-3">What is ScoreManager?</h1>
     <h5>

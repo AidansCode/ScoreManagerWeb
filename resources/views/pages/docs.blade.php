@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h1 class="display-4 bold text-center">ScoreManagerClient Docs (v1.1-beta)</h1>
+    <h1 class="bold text-center" style="font-size: 6vw;">ScoreManagerClient Docs<br/>(v1.1-beta)</h1>
     <hr class="my-0">
     <h1 class="mt-3">ScoreManager.java</h1>
     <h2>public ScoreManager(final String apiKey, int appId)</h2>
